@@ -1,43 +1,34 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>MEJIKUHIBINIU</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='./style.css'>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <script src='./script.js'></script>
-</head>
-<body>
-    <div class="start">
-        <div id="header">
-            <h2>ME JI KU HI BI NI U</h2>
-            <p>Click <a id="link" href="https://budaya-indonesia.org/MEJIKUHIBINIU">here</a> to read the game instructions</p>
-        </div>
-
-        <div class="question">
-            <h3>Pick a color</h3>
-            <ul>
-                <li id="red">RED</li>
-                <li id="orange">ORANGE</li>
-                <li id="yellow">YELLOW</li>
-                <li id="green">GREEN</li>
-                <li id="blue">BLUE</li>
-                <li id="violet">VIOLET</li>
-                <li id="purple">PURPLE</li>
-            </ul>
-        </div>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mejikuhibiniu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Mejikuhibiniu</h1>
+    <p>Play a guessing game and try to win it!</p>
+    <div class="container">
+      <div class="color-selection">
+        <p>Choose a Color:</p>
+        <button class="color-btn red">Red</button>
+        <button class="color-btn orange">Orange</button>
+        <button class="color-btn yellow">Yellow</button>
+        <button class="color-btn green">Green</button>
+        <button class="color-btn blue">Blue</button>
+        <button class="color-btn indigo">Indigo</button>
+        <button class="color-btn violet">Violet</button>
+      </div>
+      <div class="finger-selection">
+        <p>Enter number of fingers (0-10):</p>
+        <input type="number" id="user-fingers" min="0" max="10" />
+        <button id="play-btn">Play</button>
+      </div>
+      <div class="result">
+        <p id="result-text"></p>
+      </div>
     </div>
-    <div class="fingers"></div>
-    <div class="result"></div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
